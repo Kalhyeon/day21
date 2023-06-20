@@ -1,0 +1,14 @@
+<script>
+  const ar = [75, 80, 55, 65, 90];
+  // 배열에서 70점 이상인 사람들의 인원 수를 출력하시오.
+  let count = 0;
+  for (const grade of ar) {
+    if (grade >= 70) {
+      count++;
+    }
+  }
+  console.log(`70점 이상 인원 수 : ${count}`);
+
+  // 70점 이상이 3명 이상이라면 합격자 다수, 미만이라면 합격자 소수라고 출력하시오.
+  console.log (`${count>=3?'합격자 다수':'합격자 소수'}`);
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <title>Document</title>
+  <script>
+    // jQuery 는 자바스크립트 + 소스를 바른 것 => 고유한 메서드를 제공한다.
+    // $(선택자)
+    $(document).ready(function() {
+      const a = document.querySelector('#target').innerHTML;
+      const b = $('#target').text();
+      console.log(`${a} ${b}`);
+      $('#target').text('Hello');
+    });
+  </script>
+</head>
+<body>
+  <p id="target">Hello jQuery</p>
+</body>
+</html>

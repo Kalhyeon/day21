@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <title>jQuery method chaining</title>
+  <script>
+    // #target 에 Hello 라고 출력하고 글자 색상은 red, 배경 색상은 yellow,
+    // 글자를 font-weight 로 두껍게 출력하시오.
+    $(document).ready(function() {
+      $('#target').text('Hello').css('color','red').css('background-color','yellow')
+      .css('font-weight','bold');
+    });
+  </script>
+</head>
+<body>
+  <p id="target"></p>
+</body>
+</html>

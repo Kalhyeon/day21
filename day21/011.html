@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <label for="score">점수 입력:</label>
+  <input type="text" id="score">
+  <button onclick="add()">추가</button> <!-- 버튼을 클릭하였을 때 add 라는 이벤트가 발생 -->
+  <p id="target"></p>
+  <script>
+    // 점수들을 입력하면 입력한 점수들을 p 에 출력하시오.
+    const ar = [];
+    function add() {
+      const input = document.querySelector('#score');
+      ar.push(parseInt(input.value));
+      input.value = "";
+      input.focus();
+      document.querySelector('#target').innerHTML = ar;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>use strict 를 잊지 말자</title>
+</head>
+<body>
+  <script>
+    'use strict'
+    const ar = [];  // 배열 (Array, object 의 하위 타입)
+    const ob = {};  // 객체 (object)
+    // 배열에 값 추가하기
+    ar.push(5);
+    ar.push(10);
+    ar.push(15);
+    console.log(ar);
+    // 기본 작업 : Create Read Update Delete (CRUD)
+    ar.splice(0, 1);
+    console.log(ar);
+  </script>
+</body>
+</html>
